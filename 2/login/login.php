@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php 
+    session_cache_expire(300);
+    session_start(); 
+?>
 <html>
     <head>
         <meta charset="utf-8" />

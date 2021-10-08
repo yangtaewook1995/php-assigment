@@ -1,4 +1,5 @@
 <?php
+    session_cache_expire(300);
     session_start();
     session_destroy();
 ?>

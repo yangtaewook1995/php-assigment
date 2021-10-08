@@ -16,6 +16,7 @@
         exit;
     }
     /* If success */
+    session_cache_expire(300);
     session_start();
     $_SESSION['user_id'] = $user_id;
     $_SESSION['user_level'] = $members[$user_id]['level'];
