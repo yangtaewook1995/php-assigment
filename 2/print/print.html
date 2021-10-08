@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="input_form" method="post" action="print.php" target="iframe">
+            <input name="input_name" type="text" onkeyup="handleKeyUp()" autocomplete='off' style='ime-mode:active' ></input>
+        </form>
+        <iframe name="iframe" ></iframe><br/>
+    </body>
+    <script>
+        function handleKeyUp() {
+            document.forms['input_form'].submit();
+        }
+    </script>
+</html>
+
+
+
+
+
